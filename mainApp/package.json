@@ -1,0 +1,23 @@
+{
+  "name": "mainapp",
+  "version": "1.0.0",
+  "description": "Demo that build a Single Page Application to access Bootstrap and the micro frontends",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "Yahima Duarte",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "vanilla-router": "^1.2.8"
+  }
+}
