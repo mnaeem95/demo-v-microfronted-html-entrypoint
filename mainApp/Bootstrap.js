@@ -48,7 +48,9 @@ module.exports = {
 			const page = '<!DOCTYPE html><html lang="en">'+indexDoc.documentElement.innerHTML+'</html>';
 
 			// delete html stored before to save the new one
-			fs.unlinkSync(htmlPath);
+			if (fs.existsSync(htmlPath)) {
+				fs.unlinkSync(htmlPath);
+			}
 			fs.writeFileSync(htmlPath, page, 'utf-8');
 
 			callbackFn();
