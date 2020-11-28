@@ -16,7 +16,7 @@
     "dev:angular": "cd ./angular-app && npm run-script start",
     "dev:vue": "cd ./vue-app && npm run-script start",
     "build:bootstrap": "cd ./bootstrap && npm run-script build",
-    "build:react": "cd ./react-app && PUBLIC_URL=/mfe/react/ npm run-script build",
+    "build:react": "cd ./react-app && REACT_APP_MICRO_FRONTEND=true PUBLIC_URL=/mfe/react/ npm run-script build",
     "build:angular": "cd ./angular-app && npm run-script build",
     "build:vue": "cd ./vue-app && NODE_ENV=microfrontend npm run-script build",
     "build": "npm run build:react && npm run build:vue && npm run build:angular && npm run build:bootstrap"

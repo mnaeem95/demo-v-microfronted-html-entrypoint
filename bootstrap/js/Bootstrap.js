@@ -92,7 +92,11 @@ const unmountMicroFrontend = () => {
 }
 
 const activeNav = (pathName) => {
-	const pathNoSlash = pathName.replace('/', '');
+	let pathNoSlash = '';
+	const parts = (pathName || '/').substring(1).split('/');
+	if (parts.length > 0) {
+		pathNoSlash = parts[0];
+	}
 
 	const navItems = document.getElementsByClassName('nav-link');
 	for (let i=0; i< navItems.length; i++) {

@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-react {
+  text-align: center;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.nav-react a {
+  color: black;
+  font-weight: bold;
+}
+
+.nav-react a.selected {
+  color: #61dafb;
+}
+
+.content {
+  padding: 10px;
+}
