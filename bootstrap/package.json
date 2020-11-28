@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap",
+  "version": "1.0.0",
+  "description": "Bootstrap - Micro Frontend orchestrator",
+  "main": "index.js",
+  "scripts": {
+    "install:app": "npm i",
+    "start": "parcel index.html --port 3000",
+    "build": "parcel build index.html",
+    "build:watch": "parcel watch index.html"
+  },
+  "keywords": [
+    "bootstrap",
+    "orchestrator",
+    "routing",
+    "micro-frontend"
+  ],
+  "author": "Yahima Duarte",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^1.12.4"
+  }
+}
