@@ -57,14 +57,22 @@
                   "maximumError": "10kb"
                 }
               ]
-            }
+            },
+            "microfrontend": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.microfrontend.ts"
+                }
+              ]
+            },
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
             "browserTarget": "angularApp:build",
-            "port": 3001
+            "port": 4200
           },
           "configurations": {
             "production": {

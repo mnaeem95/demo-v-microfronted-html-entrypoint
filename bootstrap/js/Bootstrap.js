@@ -22,15 +22,16 @@ const getMicroFrontendRelativePath = (route) => {
 
 const showLoading = (show) => {
 	if (show) {
-		var base = document.createElement("img");
-		base.href = './images/loading.gif';
-		base.id = 'img-loading';
-		document.getElementById('app').appendChild(base);
+		document.getElementById('loading-bootstrap').hidden = false;
+	// 	var img = document.createElement('img');
+	// 	img.src ='./images/loading.gif';
+	// 	document.getElementById('app').appendChild(img);
 	} else {
-		const imgLoading = document.getElementById('img-loading');
-		if (imgLoading) {
-			imgLoading.parentNode.removeChild(imgLoading);
-		}
+		document.getElementById('loading-bootstrap').hidden = true;
+	// 	const imgLoading = document.getElementById('img-loading');
+	// 	if (imgLoading) {
+	// 		imgLoading.parentNode.removeChild(imgLoading);
+	// 	}
 	}
 }
 

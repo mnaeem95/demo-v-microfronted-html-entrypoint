@@ -4,7 +4,9 @@
   "scripts": {
     "install:app": "npm i",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build:dev": "ng build",
+    "build:prod": "ng build --prod",
+    "build": "ng build --configuration microfrontend --base-href /angular --deploy-url /mfe/angular/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
