@@ -13,7 +13,6 @@ import {BrowserRouter as Router, NavLink, Route, Switch} from "react-router-dom"
 // making sure things like the back button and bookmarks
 // work properly.
 const historyBaseName = process.env.REACT_APP_MICRO_FRONTEND === 'true' ? '/react' : process.env.PUBLIC_URL;
-console.log('history: ' + historyBaseName);
 
 export default function App() {
 	return (
